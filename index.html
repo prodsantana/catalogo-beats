@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Nueva Página Web</title>
+    <style>
+        /* Estilos básicos para que se vea genial */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding-bottom: 2rem;
+        }
+        h1 { margin-top: 0; }
+        .button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .button:hover { background: #c0392b; }
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SANTANA BEATS</h1>
+    <p>Trap, Reggaetón y Drill de alta calidad</p>
+</header>
+
+<div class="container">
+    <h2>Catálogo de Beats</h2>
+    
+    <div style="border-bottom: 1px solid #eee; padding: 10px 0;">
+        <h3>Fuego Eterno (Prod. Santana)</h3>
+        <p>Género: Reggaetón | BPM: 92</p>
+        <audio controls>
+            <source src="TU_ARCHIVO_AUDIO.mp3" type="audio/mpeg">
+            Tu navegador no soporta el reproductor.
+        </audio>
+        <br><br>
+        <a href="LINK_DE_PAGO_MERCADOPAGO" class="button">Comprar Beat ($1500)</a>
+    </div>
+
+    <div style="border-bottom: 1px solid #eee; padding: 10px 0;">
+        <h3>Nightmare Trap (Prod. Santana)</h3>
+        <p>Género: Trap | BPM: 140</p>
+        <audio controls>
+            <source src="TU_ARCHIVO_AUDIO_2.mp3" type="audio/mpeg">
+        </audio>
+        <br><br>
+        <a href="LINK_DE_PAGO_PAYPAL" class="button" style="background: #0070ba;">Comprar con PayPal ($15 USD)</a>
+    </div>
+</div>
+
+</body>
+</html>
