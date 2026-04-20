@@ -3,81 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Nueva Página Web</title>
+    <title>SANTANA BEATS | Official Catalog</title>
     <style>
-        /* Estilos básicos para que se vea genial */
+        /* ESTILO PROFESIONAL SANTANA BEATS */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             margin: 0;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f9;
+            padding: 0;
+            background-color: #0f0f0f; /* Fondo negro estudio */
+            color: #ffffff;
         }
+
         header {
-            background: #2c3e50;
-            color: #fff;
-            padding: 2rem;
+            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+            padding: 60px 20px;
             text-align: center;
+            border-bottom: 3px solid #ff3e3e; /* Línea roja distintiva */
         }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: #ff3e3e;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #aaaaaa;
+            margin-top: 10px;
+        }
+
         .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            padding-bottom: 2rem;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
         }
-        h1 { margin-top: 0; }
-        .button {
-            display: inline-block;
-            background: #e74c3c;
+
+        .section-title {
+            font-size: 2rem;
+            border-left: 5px solid #ff3e3e;
+            padding-left: 15px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        /* Tarjeta de cada Beat */
+        .beat-card {
+            background: #1e1e1e;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            transition: transform 0.3s ease;
+        }
+
+        .beat-card:hover {
+            transform: scale(1.02);
+            border-color: #ff3e3e;
+        }
+
+        .beat-tags {
+            color: #ff3e3e;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .beat-info h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.8rem;
+        }
+
+        /* Reproductor personalizado */
+        audio {
+            width: 100%;
+            margin: 20px 0;
+            filter: invert(100%) hue-rotate(180deg) brightness(1.5); /* Hace el reproductor oscuro */
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .buy-button {
+            background: #ff3e3e;
             color: white;
-            padding: 0.8rem 1.5rem;
+            padding: 12px 25px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 6px;
+            font-weight: bold;
             transition: background 0.3s;
         }
-        .button:hover { background: #c0392b; }
+
+        .buy-button:hover {
+            background: #cc0000;
+        }
+
+        .payment-methods {
+            margin-top: 60px;
+            padding: 30px;
+            background: #161616;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px dashed #444;
+        }
+
         footer {
             text-align: center;
+            padding: 50px;
+            color: #555;
             font-size: 0.9rem;
-            margin-top: 2rem;
-            color: #777;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>SANTANA BEATS</h1>
-    <p>Trap, Reggaetón y Drill de alta calidad</p>
-</header>
+    <header>
+        <h1>SANTANA</h1>
+        <p>Premium Beats & Instrumentals</p>
+    </header>
 
-<div class="container">
-    <h2>Catálogo de Beats</h2>
-    
-    <div style="border-bottom: 1px solid #eee; padding: 10px 0;">
-        <h3>Fuego Eterno (Prod. Santana)</h3>
-        <p>Género: Reggaetón | BPM: 92</p>
-        <audio controls>
-            <source src="TU_ARCHIVO_AUDIO.mp3" type="audio/mpeg">
-            Tu navegador no soporta el reproductor.
-        </audio>
-        <br><br>
-        <a href="LINK_DE_PAGO_MERCADOPAGO" class="button">Comprar Beat ($1500)</a>
+    <div class="container">
+        <h2 class="section-title">Catálogo</h2>
+
+        <div class="beat-card">
+            <div class="beat-tags">TRAP • 140 BPM</div>
+            <div class="beat-info">
+                <h3>Midnight Fury</h3>
+            </div>
+            <audio controls>
+                <source src="beat1.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+            <div class="controls">
+                <span class="price">$29.99 USD</span>
+                <a href="TU_LINK_PAGO_1" class="buy-button">ADQUIRIR LICENCIA</a>
+            </div>
+        </div>
+
+        <div class="beat-card">
+            <div class="beat-tags">REGGAETON • 95 BPM</div>
+            <div class="beat-info">
+                <h3>Fuego Eterno</h3>
+            </div>
+            <audio controls>
+                <source src="beat2.mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+                <span class="price">$45.00 USD</span>
+                <a href="TU_LINK_PAGO_2" class="buy-button">ADQUIRIR LICENCIA</a>
+            </div>
+        </div>
+
+        <div class="payment-methods">
+            <h3>Medios de Pago Soportados</h3>
+            <p>VISA | MASTERCARD | MERCADO PAGO | PAYPAL</p>
+            <p style="font-size: 0.8rem; color: #888;">Entrega inmediata tras confirmar el pago</p>
+        </div>
     </div>
 
-    <div style="border-bottom: 1px solid #eee; padding: 10px 0;">
-        <h3>Nightmare Trap (Prod. Santana)</h3>
-        <p>Género: Trap | BPM: 140</p>
-        <audio controls>
-            <source src="TU_ARCHIVO_AUDIO_2.mp3" type="audio/mpeg">
-        </audio>
-        <br><br>
-        <a href="LINK_DE_PAGO_PAYPAL" class="button" style="background: #0070ba;">Comprar con PayPal ($15 USD)</a>
-    </div>
-</div>
+    <footer>
+        <p>&copy; 2026 SANTANA BEATS. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>
